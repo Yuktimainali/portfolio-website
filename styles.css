@@ -4,7 +4,9 @@ body{
 .nav-body-div {
     display: inline-block;
     width: 400px;
-    height: 100vh;
+    height: 100.0vh;
+    /* margin-top: 5px; */
+    /* padding-bottom: 1px; */
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(assets/images/bg-1.jpg);
     background-size: cover;
     background-position: center;
@@ -38,17 +40,19 @@ body{
     text-decoration: none;
     font-weight: 600;
     font-family: Helvetica, sans-serif;
-    transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.4s;
 }
 
 .navigation-links li a.active,
 .navigation-links li a:hover{
-    color: rgb(186, 0, 0);    
+    /* color: rgb(186, 0, 0);     */
+    color: rgb(147, 12, 12);
 }
 .linkedin-icon{
     position: absolute;    
     margin-top: 45%;
     margin-left: 5.5%;
+    transition: all ease-in-out 0.4s;
 }
 .instagram-icon{
     position: absolute;    
@@ -60,13 +64,63 @@ body{
     margin-top: 45%;
     margin-left: 9.5%;
 }
+.social-icon {
+    display: inline-block;
+    color: #ffffffc9;
+  }
+  
+  .social-icon:hover{
+    color: rgb(147, 12, 12); /* Replace #ff0000 with the desired color */
+    transition: color 0.4s ease-in-out; /* Add a smooth transition effect */
+  }
 
 
 .intro-body-div{
-    /* padding-left: 120px; */
+    padding-left: 45px;
+    padding-top: 3%;
+    position: absolute;
     display: inline-block;
-    width: 76%;
-    height: 100vh;
+    width: 70%;
+    height: auto;
+    text-align: center;
+    /* font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif; */
     /* background-color: red; */
     margin: -10px;
+}
+.intro-body-heading{
+    font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 60px;
+    padding-left: 50px;
+    /* padding-top: 15%; */
+    color: rgb(130, 11, 11);
+    /* color: rgba(0, 0, 0, 0.764); */
+    /* transition: all ease-in-out 0.5s; */
+}
+.intro-body-text{
+    font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    /* text-align: center; */
+    font-size: 20px;
+    font-weight: 200;
+    padding-left: 50px;
+}
+.intro-body-div-container{
+    margin-top: 20px;
+    padding-bottom: 35px;
+    padding-top: 3px;
+    padding-right: 30px;
+    padding-left: 480px;
+    width: 640px;
+    /* font-weight: bold; */
+    /* border: 2px solid black; */
+    background-color: rgba(161, 161, 161, 0.212);
+}
+.intro-body-img{
+    /* padding-top: 40px; */
+    width: 500px;
+    height: 430px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(assets/images/image-work.jpg);
+    border-radius: 3px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
 }
