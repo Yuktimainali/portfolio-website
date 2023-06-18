@@ -1,44 +1,35 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yukti</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <div class="nav-body-div">
-        <img src="assets/images/my-pic.jpg">
-        <div class="nav-body-list">
-            <ul>
-                <li><a href="#" class="nav-link">Skills</a></li>
-                <li><a href="#" class="nav-link">Education</a></li>
-                <li><a href="#" class="nav-link">Experience</a></li>
-                <li><a href="#" class="nav-link">Projects</a></li>
-                <li><a href="#" class="nav-link">Contact me</a></li>
-                <!-- Add more list items as needed -->
-            </ul>
-        </div>
-        
-    </div>
-    
-    <!-- <div class="intro-body-div">
-        <div class="intro-body-img">
-        </div>
-        <div class="intro-body-div-container">
-            <h1 class="intro-body-heading">about me.</h1>
-            <h1 class="intro-body-text" style="color: rgb(65, 62, 62);">I'm a SOFTWARE DEVELOPER based in Delhi, India.</h1>
-            <h1 class="intro-body-text" style="color: rgb(65, 62, 62);">I am a creative problem-solver and technology
-                enthusiast.<br> With a passion for coding and a strong understanding of<br>
-                software development principles, I excel in designing and
-                <br> implementing efficient and innovative solutions. I have a
-                <br> solid foundation in programming languages such as Java,<br>
-                C++, and Python, and I am adept at utilizing various<br> frameworks and tools to build robust applications.
-            </h1>
-        </div>
-    </div> -->
-    <script src="script.js"></script>
+    <nav class="nav-bar">
+        <img src="assets/images/my-pic (2).jpg">
+        <h1>Yukti</h1>
+        <h3>Software Developer Intern</h3>
+        <ul class="menu-list">
+            <input type='checkbox' id='check' />
+            <span class="menu">
+                <li><a href="">Skills</a></li>
+                <li><a href="">Education</a></li>
+                <li><a href="">Experience</a></li>
+                <li><a href="">Projects</a></li>
+                <!-- <li><a href="">Contact me</a></li> -->
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </ul>
+    </nav>
 </body>
+
 </html>
