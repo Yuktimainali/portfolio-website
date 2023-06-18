@@ -87,23 +87,25 @@ body {
 .menu li a:hover:after {
     width: 100%;
 }
+
 .icons {
     margin-top: 50px;
-  }
-  
-  .icons a {
+}
+
+.icons a {
     padding-right: 10px;
     color: #ffffff;
-    font-size: 25px; /* Adjust the font size to your desired value */
+    font-size: 25px;
+    /* Adjust the font size to your desired value */
     transition: color 0.5s ease-in-out;
-  }
-  
-  .icons a:hover {
+}
+
+.icons a:hover {
     color: rgba(199, 3, 3, 0.842);
-  }
-  
- 
-  
+}
+
+
+
 
 .open-menu,
 .close-menu {
@@ -154,6 +156,18 @@ body {
         background: rgba(211, 211, 211, 0.873);
         height: 100vh;
         width: 100vw;
+        position: relative;
+    }
+
+    .nav-bar img {
+        border-radius: 2%;
+        width: 35%;
+        /* Adjust the width as needed */
+        position: absolute;
+        top: 35%;
+        right: 20px;
+        min-width: 180px;        /* Adjust the right position to align the image to the right */
+        transform: translate(0, -50%);
     }
 
     .menu li {
@@ -203,10 +217,30 @@ body {
         display: block;
     }
 
-    .nav-bar h1,
+    .nav-bar h1 {
+        color: black;
+        position: absolute;
+        top: 30%;
+        left: 20px;
+        transform: translateY(-50%);
+        font-size: 200%;
+    }
+
     .nav-bar h3 {
         color: black;
+        position: absolute;
+        top: 35%;
+        padding-top: 80px;
+        /* Adjust the value for desired spacing between h1 and h3 */
+        left: 20px;
+        transform: translateY(-50%);
     }
+    .nav-bar h1,
+    .nav-bar h3{
+        padding-right: 55%;
+        
+    }
+
     .icons {
         margin-top: 70px;
         padding-left: 10px;
@@ -214,11 +248,13 @@ body {
         align-items: center;
         justify-content: center;
         padding-left: 40px;
-      }
+    }
+
     .icons a {
         padding-left: 10px;
         color: white;
-        font-size: 20px; /* Adjust the font size to your desired value */
+        font-size: 20px;
+        /* Adjust the font size to your desired value */
         transition: color 0.5s ease-in-out;
-      }
+    }
 }
