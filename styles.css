@@ -130,6 +130,22 @@ body {
 #check {
     display: none;
 }
+.container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-content {
+    margin-top: 100px;
+    margin-left: 50px;
+    /* margin: 50px; */
+}
+
 
 
 @media(max-width: 700px) {
@@ -254,5 +270,8 @@ body {
         font-size: 20px;
         /* Adjust the font size to your desired value */
         transition: color 0.5s ease-in-out;
+    }
+    .intro-content{
+        display: none;
     }
 }
