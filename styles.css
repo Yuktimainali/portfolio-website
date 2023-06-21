@@ -90,8 +90,18 @@ body {
 #check {
     display: none;
 }
+.nav-content {
+    width: 50%;
+    
+    height: auto; 
+    margin: 5%;
+  }  
+.nav-content h1{
+    padding-top: 5%;
+    text-align: center;
+}
 
-@media(max-width: 610px) {
+@media(max-width: 760px) {
     .menu {
         flex-direction: column;
         /* align-items: center; */
@@ -133,5 +143,8 @@ body {
 
     #check:checked~.menu {
         right: 0;
+    }
+    .nav-content h1{
+        display: none;
     }
 }
