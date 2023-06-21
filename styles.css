@@ -92,13 +92,14 @@ body {
 }
 .nav-content {
     width: 50%;
-    
+    text-align: center;
     height: auto; 
     margin: 5%;
   }  
-.nav-content h1{
-    padding-top: 5%;
-    text-align: center;
+.nav-content h3{
+    padding-bottom: 4%;   
+    padding-top: 4%;
+    font-weight: 500;
 }
 
 @media(max-width: 760px) {
@@ -144,7 +145,7 @@ body {
     #check:checked~.menu {
         right: 0;
     }
-    .nav-content h1{
+    .nav-content h3{
         display: none;
     }
 }
