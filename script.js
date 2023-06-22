@@ -1,3 +1,18 @@
+const navLinks = document.querySelectorAll('.nav-bar li a');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', function() {
+    // Remove 'active' class from all nav links
+    navLinks.forEach(navLink => {
+      navLink.classList.remove('active');
+    });
+
+    // Add 'active' class to the clicked nav link
+    this.classList.add('active');
+  });
+});
+
+
 var counter = 1;
     setInterval(function(){
       document.getElementById('radio' + counter).checked = true;
@@ -17,6 +32,9 @@ var counter = 1;
       textElement.style.animation = "text-appear 0.7s ease-in-out";
     }, 3500);
     
+
+ 
+
 
 
     

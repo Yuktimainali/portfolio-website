@@ -7,16 +7,19 @@
 body {
     background-color: rgb(231, 231, 231);
 }
+
 #intro-page {
     background-image: linear-gradient(to bottom, rgba(240, 240, 240, 0.2), rgba(240, 240, 240, 0.8)), url('assets/images/bg-1.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
-  }
-  
+}
+
 
 .nav {
     font-family: "Bitter", serif;
+    width: 100vw;
+    position: fixed;
     /* font-size: 1.2rem; */
 }
 
@@ -73,6 +76,10 @@ body {
 .menu li a:hover:after {
     width: 100%;
 }
+.menu li a.active {
+    color: rgb(173, 0, 0);
+}
+
 
 .open-menu,
 .close-menu {
@@ -97,56 +104,66 @@ body {
 #check {
     display: none;
 }
+
 .nav-content {
-    width: 50%;
-    padding-top: 5%;
+    width: 50vw;
+    margin: auto;
+    position: absolute;
+    /* margin-left: 20px; */
+    top: 50%;
+    left: 28%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    height: auto; 
-    margin: 5%;
-  }  
-.nav-content h3{
-    padding-bottom: 4%;   
+}
+
+.nav-content h3 {
+    padding-bottom: 4%;
     padding-top: 3%;
     font-weight: 500;
 }
+
 @keyframes text-appear {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
-  #text-animation {
+}
+
+#text-animation {
     animation: text-appear 0.5s ease-in-out;
-  }
-  .styled-button {
+}
+
+.styled-button {
     display: inline-block;
     padding: 12px 24px;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
-    text-decoration: none;    
+    text-decoration: none;
     background-color: rgb(173, 0, 0);
     color: #ffffff;
     border: none;
     border-radius: 25px;
     transition: background-color 0.5s ease-in-out;
-  }
-  .nav-content h1{
+}
+
+.nav-content h1 {
     font-size: 3rem;
-  }
-  
-  .styled-button:hover {
+}
+
+.styled-button:hover {
     background-color: rgb(119, 119, 119);
-  }
-  .styled-button a{
+}
+
+.styled-button a {
     color: white;
     text-decoration: none;
-  }
+}
 
-@media(max-width: 860px) {
+@media(max-width: 920px) {
     .menu {
         flex-direction: column;
         /* align-items: left; */
@@ -157,17 +174,20 @@ body {
         top: 0;
         right: -100%;
         z-index: 100;
-        background-color: black;
+        min-width: 170px;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
         transition: all 0.2s ease-in-out;
     }
+
     .styled-button {
         margin-top: 30px;
         padding: 10px 20px;
         font-size: 14px;
-      }
-      .nav-content h1{
+    }
+
+    .nav-content h1 {
         font-size: 2rem;
-      }
+    }
 
     .nav-bar {
         padding: 15px 15px;
@@ -175,14 +195,15 @@ body {
 
     .menu li {
         padding-bottom: 30px;
-        padding-left: 35px;
+        padding-left: 30px;
         padding-right: 35px;
         color: white;
+        /* text-transform: uppercase; */
     }
 
     .menu li a {
         /* padding: 10px; */
-        /* text-transform: uppercase; */
+        text-transform: capitalize;
         text-align: left;
     }
 
@@ -198,12 +219,16 @@ body {
     #check:checked~.menu {
         right: 0;
     }
-    .nav-content{
-        padding-top: 225px;
-        width: 100vw;
-        margin: 0;
+
+    .nav-content {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
-    .nav-content h3{
+
+
+    .nav-content h3 {
         display: none;
     }
 }
