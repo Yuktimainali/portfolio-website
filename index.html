@@ -15,21 +15,21 @@
 </head>
 
 <body>
-    <div id="intro-page">
-        <div class="nav">
-            <ul class='nav-bar'>
-                <h2>Yukti</h2>
-                <input type='checkbox' id='check' />
-                <span class="menu">
-                    <li><a href="#"><i class="fa-solid fa-pen"></i>Skills</a></li>
-                    <li><a href="#"><i class="fa-solid fa-laptop"></i>Projects</a></li>
-                    <li><a href="#"><i class="fa-solid fa-book"></i>Education</a></li>
-                    <li><a href="#"><i class="fa-solid fa-briefcase"></i>Experience</a></li>
-                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-                </span>
-                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-            </ul>
-        </div>
+    <div class="nav">
+        <ul class='nav-bar'>
+            <a href="#intro-page" id="namelink"><h2>Yukti</h2></a>
+            <input type='checkbox' id='check' />
+            <span class="menu">
+                <li><a href="#skills-page" id="skills-link"><i class="fa-solid fa-pen"></i>Skills</a></li>
+                <li><a href="#"><i class="fa-solid fa-laptop"></i>Projects</a></li>
+                <li><a href="#"><i class="fa-solid fa-book"></i>Education</a></li>
+                <li><a href="#"><i class="fa-solid fa-briefcase"></i>Experience</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </ul>
+    </div>
+    <div id="intro-page">        
         <div class="nav-content">
             <h1>My name is Yukti</h1>
             <h2 id="text-animation">I am a Software Developer.</h2>
@@ -69,7 +69,7 @@
             </div>
         </div>
     </div>
-    <div id="skills-page">
+    <div id="skills-page" style="display: none;">
         <div class="skills-content">
             <h1 style="font-weight: 750; color: rgb(173, 0, 0);">Skills</h1>
             <h2>I have acquired a diverse range of skills.</h2>
@@ -81,7 +81,6 @@
                 processes. Adaptability and a willingness to learn facilitate keeping up with evolving technologies and
                 industry trends. </h3>
         </div>
-        
     </div>
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -94,4 +93,5 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

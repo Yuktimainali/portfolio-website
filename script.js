@@ -1,5 +1,16 @@
-const navLinks = document.querySelectorAll('.nav-bar li a');
+document.getElementById('namelink').addEventListener('click', function (event) {
+  event.preventDefault(); // Prevent the default link behavior
+  document.getElementById('skills-page').style.display = 'none';
+  document.getElementById('intro-page').style.display = 'block';
+});
 
+document.getElementById('skills-link').addEventListener('click', function (event) {
+  event.preventDefault(); // Prevent the default link behavior
+  document.getElementById('skills-page').style.display = 'block';
+  document.getElementById('intro-page').style.display = 'none';
+});
+
+const navLinks = document.querySelectorAll('.nav-bar li a');
 navLinks.forEach(link => {
   link.addEventListener('click', function () {
     // Remove 'active' class from all nav links
@@ -11,6 +22,20 @@ navLinks.forEach(link => {
     this.classList.add('active');
   });
 });
+
+const nameLinks = document.querySelectorAll('.nav-bar a');
+nameLinks.forEach(link => {
+  link.addEventListener('click', function () {
+    // Remove 'active' class from all nav links
+    nameLinks.forEach(navLink => {
+      navLink.classList.remove('active');
+    });
+
+    // Add 'active' class to the clicked nav link
+    this.classList.add('active');
+  });
+});
+
 
 
 var counter = 1;
