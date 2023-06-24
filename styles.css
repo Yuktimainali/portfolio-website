@@ -216,8 +216,7 @@ body {
 
     .nav-content h1 {
         font-size: 2rem;
-    }
-    
+    }  
     
 
     .nav-bar {
@@ -228,7 +227,7 @@ body {
         padding-bottom: 30px;
         padding-left: 30px;
         padding-right: 35px;
-        color: white;
+        /* color: white */
         /* text-transform: uppercase; */
     }
 
@@ -236,6 +235,7 @@ body {
         /* padding: 10px; */
         text-transform: capitalize;
         text-align: left;
+        color: white;
     }
 
     .close-menu i {
