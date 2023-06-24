@@ -31,6 +31,7 @@ var counter = 1;
       void textElement.offsetWidth; // Trigger reflow
       textElement.style.animation = "text-appear 0.7s ease-in-out";
     }, 3500);
+
     
 
  

@@ -20,6 +20,7 @@ body {
     font-family: "Bitter", serif;
     width: 100vw;
     position: fixed;
+    z-index: 2;
     /* font-size: 1.2rem; */
 }
 
@@ -36,6 +37,7 @@ body {
 
 .nav-bar h2 {
     font-size: 2.2rem;
+    font-weight: 800;
 }
 
 .menu {
@@ -49,9 +51,9 @@ body {
 .menu li a {
     display: inline-block;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    color: var(--color1);
+    color: black;
     text-align: center;
     transition: 0.5s ease-in-out;
     position: relative;
@@ -111,7 +113,7 @@ body {
     position: absolute;
     /* margin-left: 20px; */
     top: 50%;
-    left: 28%;
+    left: 29%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
@@ -119,7 +121,8 @@ body {
 .nav-content h3 {
     padding-bottom: 4%;
     padding-top: 3%;
-    font-weight: 500;
+    font-weight:350;
+    font-size: 1.2rem;
 }
 
 @keyframes text-appear {
@@ -152,6 +155,7 @@ body {
 
 .nav-content h1 {
     font-size: 3rem;
+    font-weight: bold;
 }
 
 .styled-button:hover {
@@ -162,10 +166,30 @@ body {
     color: white;
     text-decoration: none;
 }
+.img-slide {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 23%;
+    right: 2%;
+  }
+  #carouselExampleIndicators {
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 40vw;
+    max-width: 490px;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid black;
+  }
+  
+  
 
 @media(max-width: 920px) {
     .menu {
         flex-direction: column;
+        /* position: absolute; */
         /* align-items: left; */
         justify-content: center;
         width: 30%;
@@ -173,7 +197,7 @@ body {
         position: fixed;
         top: 0;
         right: -100%;
-        z-index: 100;
+        z-index: 1;
         min-width: 170px;
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
         transition: all 0.2s ease-in-out;
@@ -188,6 +212,12 @@ body {
     .nav-content h1 {
         font-size: 2rem;
     }
+    .nav-content h2{
+        margin-top: 12px; 
+        letter-spacing: 1.5; 
+        color: rgb(173, 0, 0);
+    }
+    
 
     .nav-bar {
         padding: 15px 15px;
@@ -226,9 +256,14 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
+    .nav-content h2{
+        font-size: 1.5rem;
+    }
 
     .nav-content h3 {
+        display: none;
+    }
+    .img-slide{
         display: none;
     }
 }
