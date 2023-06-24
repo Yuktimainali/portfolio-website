@@ -78,6 +78,7 @@ body {
 .menu li a:hover:after {
     width: 100%;
 }
+
 .menu li a.active {
     color: rgb(173, 0, 0);
 }
@@ -111,6 +112,7 @@ body {
     width: 50vw;
     margin: auto;
     position: absolute;
+
     /* margin-left: 20px; */
     top: 50%;
     left: 29%;
@@ -121,7 +123,7 @@ body {
 .nav-content h3 {
     padding-bottom: 4%;
     padding-top: 3%;
-    font-weight:350;
+    font-weight: 350;
     font-size: 1.2rem;
 }
 
@@ -153,6 +155,10 @@ body {
     transition: background-color 0.5s ease-in-out;
 }
 
+.styled-button:focus {
+    outline: none;
+}
+
 .nav-content h1 {
     font-size: 3rem;
     font-weight: bold;
@@ -163,33 +169,36 @@ body {
 }
 
 .styled-button a {
-    color: white;
+    /* color: white; */
     text-decoration: none;
 }
+
 .img-slide {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     position: absolute;
-    top: 23%;
-    right: 2%;
-  }
-  #carouselExampleIndicators {
+    top: 24%;
+    right: 4%;
+}
+
+#carouselExampleIndicators {
     margin-left: 20px;
     margin-right: 10px;
     width: 40vw;
-    max-width: 490px;
+    max-width: 450px;
     height: auto;
     border-radius: 8px;
-    border: 2px solid black;
-  }
-  .nav-content h2{
-    margin-top: 12px; 
-    letter-spacing: 1.5; 
+    border: 3px solid black;
+}
+
+.nav-content h2 {
+    margin-top: 12px;
+    letter-spacing: 1.5;
     color: rgb(173, 0, 0);
 }
-  
-  
+
+
 
 @media(max-width: 920px) {
     .menu {
@@ -216,8 +225,8 @@ body {
 
     .nav-content h1 {
         font-size: 2rem;
-    }  
-    
+    }
+
 
     .nav-bar {
         padding: 15px 15px;
@@ -257,14 +266,16 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    .nav-content h2{
+
+    .nav-content h2 {
         font-size: 1.5rem;
     }
 
     .nav-content h3 {
         display: none;
     }
-    .img-slide{
+
+    .img-slide {
         display: none;
     }
 }
