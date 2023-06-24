@@ -198,13 +198,31 @@ body {
     color: rgb(173, 0, 0);
 }
 
+.icons {
+    margin-top: 20px;
+
+}
+
+.icons a {
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 27px;
+    transition: all 0.5s ease-in-out;
+}
+
+.icons a:hover {
+    color: rgb(173, 0, 0);
+}
+
+.menu li i {
+    display: none;
+}
 
 
 @media(max-width: 920px) {
     .menu {
         flex-direction: column;
-        /* position: absolute; */
-        /* align-items: left; */
         justify-content: center;
         width: 30%;
         height: 100vh;
@@ -212,9 +230,14 @@ body {
         top: 0;
         right: -100%;
         z-index: 1;
-        min-width: 170px;
+        min-width: 210px;
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
         transition: all 0.2s ease-in-out;
+    }
+
+    .menu li i {
+        display: inline-block;
+        padding-right: 10px;
     }
 
     .styled-button {
@@ -227,7 +250,6 @@ body {
         font-size: 2rem;
     }
 
-
     .nav-bar {
         padding: 15px 15px;
     }
@@ -236,12 +258,11 @@ body {
         padding-bottom: 30px;
         padding-left: 30px;
         padding-right: 35px;
-        /* color: white */
-        /* text-transform: uppercase; */
     }
 
     .menu li a {
         /* padding: 10px; */
+        font-size: 20px;
         text-transform: capitalize;
         text-align: left;
         color: white;
