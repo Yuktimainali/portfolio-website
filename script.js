@@ -32,11 +32,3 @@ setInterval(() => {
   textElement.style.animation = "text-appear 0.7s ease-in-out";
 }, 3500);
 
-
-
-
-
-
-
-
-
