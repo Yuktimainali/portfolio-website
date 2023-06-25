@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Yukti</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -17,7 +18,9 @@
 <body>
     <div class="nav">
         <ul class='nav-bar'>
-            <a href="#intro-page" id="namelink"><h2>Yukti</h2></a>
+            <a href="#intro-page" id="namelink">
+                <h2>Yukti</h2>
+            </a>
             <input type='checkbox' id='check' />
             <span class="menu">
                 <li><a href="#skills-page" id="skills-link"><i class="fa-solid fa-pen"></i>Skills</a></li>
@@ -29,7 +32,7 @@
             <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
         </ul>
     </div>
-    <div id="intro-page">        
+    <div id="intro-page">
         <div class="nav-content">
             <h1>My name is Yukti</h1>
             <h2 id="text-animation">I am a Software Developer.</h2>
@@ -38,7 +41,8 @@
                 skills to the team and gain valuable experience in the industry.</h3>
             <a href="#" target="_blank"><button class="styled-button">Let's connect</button></a>
             <div class="icons">
-                <a href="https://www.linkedin.com/in/yukti-mainali/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/yukti-mainali/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
                 <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
                 <a href="#" target="_blank"><i class="fa-solid fa-envelope"></i></a>
                 <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
@@ -73,15 +77,164 @@
         <div class="skills-content">
             <h1 style="font-weight: 750; color: rgb(173, 0, 0);">Skills</h1>
             <h2>I have acquired a diverse range of skills.</h2>
-            <h3 style="font-weight: 350; font-size: 1.2rem; margin: 30px;">In addition to strong programming knowledge, software
+            <h3 style="font-weight: 350; font-size: 1.2rem; margin: 15px;">In addition to strong programming knowledge,
+                software
                 developers benefit from various skills that enhance their effectiveness and success. Effective
                 communication skills are crucial for collaborating with team members and clients, as well as documenting
                 and presenting ideas. Problem-solving skills aid in analyzing complex issues and devising efficient
                 solutions. Attention to detail ensures accuracy and minimizes errors in coding and software development
                 processes. Adaptability and a willingness to learn facilitate keeping up with evolving technologies and
-                industry trends. </h3>
+                industry trends. 
+            </h3>
+            <h2 class="hidden-display" style="font-weight: 350; font-size: 1.2rem; margin: 15px;">
+                In addition to strong programming knowledge,
+                software
+                developers benefit from various skills that enhance their effectiveness and success. 
+            </h2>
         </div>
+        <div class="card-body">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <!--<img src="images/profile1.jpg" alt="" class="card-img">-->
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">David Dell</h2>
+                                <p class="description">The lorem text the section that contains header with having open
+                                    functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                                <!-- <button class="button">View More</button> -->
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <!--<img src="images/profile2.jpg" alt="" class="card-img">-->
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">David Dell</h2>
+                                <p class="description">The lorem text the section that contains header with having open
+                                    functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                                <!-- <button class="button">View More</button> -->
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <!--<img src="images/profile3.jpg" alt="" class="card-img">-->
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">David Dell</h2>
+                                <p class="description">The lorem text the section that contains header with having open
+                                    functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                                <!-- <button class="button">View More</button> -->
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <!--<img src="images/profile4.jpg" alt="" class="card-img">-->
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">David Dell</h2>
+                                <p class="description">The lorem text the section that contains header with having open
+                                    functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                                <!-- <button class="button">View More</button> -->
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <!--<img src="images/profile5.jpg" alt="" class="card-img">-->
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">David Dell</h2>
+                                <p class="description">The lorem text the section that contains header with having open
+                                    functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                                <!-- <button class="button">View More</button> -->
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <!--<img src="images/profile6.jpg" alt="" class="card-img">-->
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">David Dell</h2>
+                                <p class="description">The lorem text the section that contains header with having open
+                                    functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                                <!-- <button class="button">View More</button> -->
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <!--<img src="images/profile7.jpg" alt="" class="card-img">-->
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">David Dell</h2>
+                                <p class="description">The lorem text the section that contains header with having open
+                                    functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                                <!-- <button class="button">View More</button> -->
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <!--<img src="images/profile8.jpg" alt="" class="card-img">-->
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">David Dell</h2>
+                                <p class="description">The lorem text the section that contains header with having open
+                                    functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                                <!-- <button class="button">View More</button> -->
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+                                <div class="card-image">
+                                    <!--<img src="images/profile9.jpg" alt="" class="card-img">-->
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="name">David Dell</h2>
+                                <p class="description">The lorem text the section that contains header with having open
+                                    functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                                <!-- <button class="button">View More</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -92,6 +245,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
