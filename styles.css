@@ -251,7 +251,7 @@ body {
 }
 
 .skills-content {
-    margin: 5%;
+    margin-top: 5%;
     text-align: center;
 }
 
@@ -264,7 +264,7 @@ body {
 }
 
 .card-body {
-    top: 50%;
+    /* top: 90%; */
     padding: 0;
 }
 
@@ -670,7 +670,7 @@ body {
 
   .card-body {
     position: absolute;
-    top: 65%;
+    top: 70%;
     left: 49%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -841,6 +841,9 @@ body {
       }
 }
 @media(min-width: 414px) and (max-width: 500px){
+    .card-body{
+        top: 67%;
+    }
     .hidden-display{
         display: block;
     }
