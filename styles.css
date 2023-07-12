@@ -264,7 +264,7 @@ body {
 }
 
 
-@media(max-width: 920px) {
+@media(max-width: 920px), (max-height: 838px){
 
     /* intro-page-media-query-style */
 
