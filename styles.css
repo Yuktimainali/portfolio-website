@@ -131,9 +131,9 @@ body {
 .nav-content {
     width: 50vw;
     margin: auto;
-    position: absolute;
+    position: fixed;
     top: 50%;
-    left: 29%;
+    left: 30%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
@@ -243,7 +243,10 @@ body {
     background-image: linear-gradient(to bottom, rgba(240, 240, 240, 0.8), rgba(240, 240, 240, 0.9)), url('assets/images/bg-1.jpg');
     background-size: cover;
     background-position: center;
-    padding-top: 30px;
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -262,16 +265,45 @@ body {
 .skills-content h2 {
     font-size: 2rem;
 }
+.skills-container{
+    width: 500px;
+}
+.skills-cards{
+    display: grid;
+    background-color: maroon;
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+.skills-img{
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    justify-self: center;
+}
+.swiper-pagination{
+    position: initial;
+}
+.swiper-pagination-bullet{
+    width: 30px;
+    height: 4px;
+    border-radius: 1px;
+}
+.swiper-pagination-bullet-active {
+    background-color: black; /* Change to your desired color */
+  }
+  
 
 
-@media(max-width: 920px), (max-height: 838px){
+
+@media(max-width: 920px), (max-height: 650px){
 
     /* intro-page-media-query-style */
 
     .menu {
         flex-direction: column;
         justify-content: center;
-        width: 30%;
+        width: 15%;
         height: 100vh;
         position: fixed;
         top: 0;
@@ -329,6 +361,7 @@ body {
     }
 
     .nav-content {
+        position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -354,7 +387,7 @@ body {
         align-items: center;
         height: 100vh;
         margin: 0;
-        padding-top: 70px;
+        padding-top: 50px;
       }
       
       .skills-content {
@@ -362,7 +395,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 10%;
+        /* margin-top: 10%; */
         /* margin-bottom: 20px; */
       }
       

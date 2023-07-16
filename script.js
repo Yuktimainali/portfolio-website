@@ -1,3 +1,6 @@
+
+
+
 document.getElementById('namelink').addEventListener('click', function (event) {
   event.preventDefault(); // Prevent the default link behavior
   document.getElementById('skills-page').style.display = 'none';
@@ -57,32 +60,14 @@ setInterval(() => {
   textElement.style.animation = "text-appear 0.7s ease-in-out";
 }, 3500);
 
-var swiper = new Swiper(".slide-content", {
-  slidesPerView: 3,
-  spaceBetween: 25,
+const swiper = new Swiper('.skills-container', {
+  spaceBetween: 16,
   loop: true,
-  centerSlide: 'true',
-  fade: 'true',
-  grabCursor: 'true',
+  grabCursor: true,
+
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
     clickable: true,
-    dynamicBullets: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
   },
 
-  breakpoints:{
-      0: {
-          slidesPerView: 1,
-      },
-      520: {
-          slidesPerView: 2,
-      },
-      950: {
-          slidesPerView: 3,
-      },
-  },
 });
