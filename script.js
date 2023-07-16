@@ -1,6 +1,4 @@
 
-
-
 const nameLinks = document.querySelectorAll('.nav-bar a');
 nameLinks.forEach(link => {
   link.addEventListener('click', function () {
