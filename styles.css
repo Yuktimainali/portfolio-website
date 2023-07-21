@@ -131,8 +131,8 @@ body {
 .nav-content {
     width: 50vw;
     margin: auto;
-    position: fixed;
-    top: 50%;
+    position: absolute;
+    top: 52%;
     left: 30%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -196,7 +196,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     position: absolute;
-    top: 24%;
+    top: 22%;
     right: 3%;
 }
 
@@ -306,7 +306,7 @@ body {
     }
 
     .nav-content {
-        position: fixed;
+        position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -323,45 +323,6 @@ body {
     .img-slide {
         display: none;
     }
-
-    /* skill-page-media-query-style */
-
-    #skills-page {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        padding-top: 50px;
-      }
-      
-      .skills-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        /* margin-top: 10%; */
-        /* margin-bottom: 20px; */
-      }
-      
-      .skills-content h1 {
-        font-size: 2rem;
-      }
-      
-      .skills-content h2 {
-        font-size: 1.5rem;
-      }
-      
-      .skills-content h3 {
-        display: none;
-      }
-      .skills-content h4{
-        display: block;
-        font-size: small;
-        font-weight: lighter;
-        padding-top: 10px;
-        padding-bottom: 10px;
-      }
 }
 
 
