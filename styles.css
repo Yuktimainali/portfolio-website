@@ -5,7 +5,25 @@
     margin: 0;
     padding: 0;
 }
-
+::-webkit-scrollbar {
+    width: 12px; 
+  }  
+  @-moz-document url-prefix() {
+    scrollbar-color: maroon black;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: maroon; 
+    
+  }  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #800000; 
+  }  
+  ::-webkit-scrollbar-track {
+    background-color: black; 
+    
+  }
+  
 body {
     background-image: linear-gradient(to bottom, rgba(240, 240, 240, 0.1), rgba(240, 240, 240, 0.8)), url('assets/images/bg-1.jpg');
     background-size: cover;
@@ -25,10 +43,16 @@ body {
 .nav {
     font-family: "Bitter", serif;
     width: 100vw;
+    height: 90px;
     position: fixed;
     z-index: 2;
+    transition: background-color 0.3s ease-in-out;
     /* font-size: 1.2rem; */
 }
+.nav.scrolled {
+  background-color: rgba(255, 255, 255, 0.849);
+}
+
 
 .nav-bar {
     width: 100%;
@@ -115,7 +139,7 @@ body {
 
 .open-menu {
     top: 40%;
-    right: 25px;
+    right: 30px;
     transform: translateY(-50%);
 }
 
@@ -238,6 +262,19 @@ body {
 }
 
 
+/* skilled-page-style */
+#skills-page{  
+  height: 100vh;
+  background-color: white;
+}
+.skills-content h1{
+  text-align: center;  
+  font-size: 3rem;
+  font-weight: bold;
+  padding-top: 85px;
+  color: rgb(173, 0, 0);
+}
+
 
 @media(max-width: 920px), (max-height: 650px){
 
@@ -269,7 +306,9 @@ body {
         padding: 10px 20px;
         font-size: 14px;
     }
-
+    .nav{
+        height: 70px;
+    }
     .nav-content h1 {
         font-size: 2rem;
     }
