@@ -31,11 +31,12 @@
 
 /* intro-page-ui-style */
 
-#intro-page {
+/* #intro-page {
     height: 100vh;
-}
+} */
 
 .intro-body{
+    height: 100vh;
     background-image: linear-gradient(to bottom, rgba(240, 240, 240, 0.3), rgba(240, 240, 240, 1)), url('assets/images/bg-1.jpg');
     background-size: cover;
     background-position: center;
@@ -267,7 +268,8 @@
 
 /* skilled-page-style */
 #skills-page {
-    height: 100vh;
+    width: 100%;
+    padding: 60px 0;
     background-color: white;
 }
 
@@ -275,7 +277,6 @@
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
-    padding-top: 30px;
     color: rgb(173, 0, 0);
 }
 
@@ -283,11 +284,77 @@
     text-align: center;
     padding-left: 30px;
     padding-right: 30px;
-    font-size: 1.5rem;
+    font-size: 2rem;
+}
+.skills-cards-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .skills-cards {
+    margin: 3px;
+  }
+  .skills-cards h3{
+    font-weight: 450;
+    text-align: center;
+  }
+
+  .skills-card {    
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    /* background-color: maroon; */
+    justify-content: center; /* Center the images horizontally */
+    align-items: center;
+  }
+  .skills-card img{
+    height: 100px;
+  }
+  .img-icons {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically */
+  }
+  .img-icons img{
+    margin: 20px;
+  }
+
+@media(max-width: 920px){
+    .skills-cards-container {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .skills-cards h3{
+        font-size: 18px;
+    }
+    .skills-cards{
+        margin: 10px;
+    }
+    .skills-card{
+        width: auto;
+    }
+    .skills-card img{
+        height: 60px;
+    }
+    .img-icons {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+      }
+    
+      .img-icons img {
+        margin: 15px; 
+      }
 }
 
-
-@media(max-width: 1136px),
+@media(max-width: 1290px),
 (max-height: 650px) {
 
     /* intro-page-media-query-style */
@@ -309,7 +376,6 @@
 
     .menu li a {
         display: inline-block;
-
         padding-left: 20px;
     }
 
@@ -324,7 +390,7 @@
     }
 
     .nav-content h1 {
-        font-size: 2rem;
+        font-size: 2.6rem;
     }
 
     .nav-bar {
@@ -370,6 +436,7 @@
     }
 
     .nav-bar h2 {
+        padding-top: 10px;
         font-size: 1.7rem;
     }
 
@@ -382,12 +449,28 @@
     }
 
     .skills-content h1 {
-        padding-top: 65px;
-        font-size: 2rem;
+        font-size: 2.6rem;
     }
-
+    #skills-page{
+        padding-bottom: 30px;
+    }
     .skills-content h2 {
-        font-size: 1rem;
+        font-size: 1.8rem;
     }
-
+    .skills-card img{
+        height: 65px;
+    }
+    .skills-cards h3{
+        font-size: 1.5rem;
+    }
+    .img-icons {
+        display: flex;
+        justify-content: center; /* Center the images horizontally */
+        align-items: center; /* Center the images vertically */
+      }
+    
+      .img-icons img {
+        margin: 15px; /* Add some spacing between the images */
+        /* Add any other necessary styles for the images */
+      }
 }
