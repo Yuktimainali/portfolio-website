@@ -532,12 +532,11 @@ body.show-scrollbar {
     }
     .img-icons {
         display: flex;
-        justify-content: center; /* Center the images horizontally */
-        align-items: center; /* Center the images vertically */
+        justify-content: center; 
+        align-items: center; 
       }
     
       .img-icons img {
-        margin: 15px; /* Add some spacing between the images */
-        /* Add any other necessary styles for the images */
+        margin: 15px; 
       }
 }
