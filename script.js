@@ -1,11 +1,16 @@
 window.addEventListener("load", function () {
   const preloader = document.querySelector(".preloader");
-  const content = document.querySelector(".content");
+  const websiteContent = document.querySelector(".website-content");
+  const body = document.body;
+
+  // Simulate a minimum loading time of 3 seconds
   setTimeout(function () {
       preloader.style.display = "none";
-      content.style.display = "block";
-  }, 3000);
+      websiteContent.style.display = "block";
+      body.classList.add("show-scrollbar"); // Show the scrollbar when content is loaded
+  }, 4000); // 3000 milliseconds = 3 seconds
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
   const links = document.querySelectorAll(".menu a");

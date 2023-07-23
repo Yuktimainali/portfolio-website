@@ -1,4 +1,10 @@
 /* main-page-ui-style */
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: Arial, sans-serif; */
+    overflow: hidden;
+}
 
 .preloader {
     position: fixed;
@@ -13,6 +19,7 @@
     z-index: 9999;
 }
 
+/* Rest of your preloader CSS styles... */
 .loader {
     width: 50px;
     height: 50px;
@@ -32,14 +39,14 @@
 }
 
 .loader::before {
-    border-top-color: white;
-    border-bottom-color: white;
+    border-top-color: rgb(173, 0, 0);
+    border-bottom-color: rgb(173, 0, 0);
     animation: spin 1.5s linear infinite;
 }
 
 .loader::after {
-    border-left-color: white;
-    border-right-color: white;
+    border-left-color: rgb(173, 0, 0);
+    border-right-color: rgb(173, 0, 0);
     animation: spin 1s linear infinite;
 }
 
@@ -52,6 +59,17 @@
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.2); }
 }
+
+.website-content {
+    display: none; /* Hide the website content initially */
+    animation: fade-out 1s forwards; /* Fade-out animation when content is loaded */
+}
+
+/* Show the scrollbar when content is loaded */
+body.show-scrollbar {
+    overflow: auto;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -82,10 +100,6 @@
 
 
 /* intro-page-ui-style */
-
-/* #intro-page {
-    height: 100vh;
-} */
 
 .intro-body{
     height: 100vh;
@@ -329,11 +343,12 @@
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
-    color: rgb(173, 0, 0);
+    color: black;
 }
 
 .skills-content h2 {
     text-align: center;
+    color: rgb(173, 0, 0);
     padding-left: 30px;
     padding-right: 30px;
     font-size: 2rem;
@@ -359,7 +374,6 @@
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
-    /* background-color: maroon; */
     justify-content: center; /* Center the images horizontally */
     align-items: center;
   }
@@ -387,7 +401,8 @@
         font-size: 18px;
     }
     .skills-cards{
-        margin: 10px;
+        margin: 30px 10px;
+        /* margin: 10px; */
     }
     .skills-card{
         width: auto;
