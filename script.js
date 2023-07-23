@@ -1,3 +1,12 @@
+window.addEventListener("load", function () {
+  const preloader = document.querySelector(".preloader");
+  const content = document.querySelector(".content");
+  setTimeout(function () {
+      preloader.style.display = "none";
+      content.style.display = "block";
+  }, 3000);
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   const links = document.querySelectorAll(".menu a");
 
