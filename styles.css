@@ -348,28 +348,28 @@ body.show-scrollbar {
     padding-right: 30px;
     font-size: 2rem;
 }
-.education-college-container{
+.education-college-container, .education-school-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
 }
-.education-college-container img{
+.education-college-container img, .education-school-container img{
     width: 170px;
     height: auto;
     transition: all 0.5s ease-in-out;
 }
-.education-college-container img:hover{
+.education-college-container img:hover, .education-school-container img:hover{
     width: 185px;
     height: auto;
 }
-.education-college-container img, .education-college-container h3{
+.education-college-container img, .education-college-container h3, .education-school-container img, .education-school-container h3{
     margin: 30px;
     text-align: justify;
     font-weight: 400;
     font-size: medium;
 }
-.education-college-container h3{
+.education-college-container h3, .education-school-container h3{
     width: 800px;
     margin-top: 40px;
     height: auto;
