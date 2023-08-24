@@ -382,7 +382,7 @@ body.show-scrollbar {
     background-color: rgb(173, 0, 0);
     top: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 0 0 4px rgba(103, 58, 183, 0.2);
+    /* box-shadow: 0 0 0 4px rgba(103, 58, 183, 0.2); */
   }
   .timeline > .timeline-item:nth-child(odd) > div:first-child {
     text-align: right;
