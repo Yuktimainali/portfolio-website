@@ -162,7 +162,7 @@ body.show-scrollbar {
     text-align: center;
     transition: 0.5s ease-in-out;
     position: relative;
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
 }
 
 .menu li a::after {
@@ -515,39 +515,7 @@ body.show-scrollbar {
 
     color: #ffffff;
   }
-  @media (max-width: 767px) {
-    .timeline > .timeline-item {
-      flex-direction: column;
-      border-left: 2px solid #e0e0e0;
-    }
-    .timeline > .timeline-item .timeline-date > img {
-      display: none;
-    }
-    .timeline > .timeline-item > div {
-      border-width: 0px !important;
-      text-align: left !important;
-      order: unset !important;
-    }
-    .timeline > .timeline-item > div::after {
-      left: 0% !important;
-    }
-    .timeline > .timeline-item:nth-child(odd) > .timeline-content > h2 {
-      text-align: left !important;
-    }
-    .timeline > .timeline-item:nth-child(even) > .timeline-content > h2 {
-      text-align: left !important;
-    }
-    .timeline > .timeline-item:nth-child(even) > .timeline-content > p > img {
-      right: 0;
-      left: inherit;
-      transform-origin: bottom right;
-    }
-    .timeline > .timeline-item:nth-child(even) > .timeline-content > p > button {
-      left: 15px;
-      right: inherit;
-    }
-  }
-
+  
 
 
 /* skilled-page-style */
@@ -757,4 +725,38 @@ body.show-scrollbar {
       .img-icons img {
         margin: 15px; 
       }
+
+
+        .timeline > .timeline-item {
+          flex-direction: column;
+          border-left: 2px solid #e0e0e0;
+        }
+        .timeline > .timeline-item .timeline-date > img {
+          display: none;
+        }
+        .timeline > .timeline-item > div {
+          border-width: 0px !important;
+          text-align: left !important;
+          order: unset !important;
+        }
+        .timeline > .timeline-item > div::after {
+          left: 0% !important;
+        }
+        .timeline > .timeline-item:nth-child(odd) > .timeline-content > h2 {
+          text-align: left !important;
+        }
+        .timeline > .timeline-item:nth-child(even) > .timeline-content > h2 {
+          text-align: left !important;
+        }
+        .timeline > .timeline-item:nth-child(even) > .timeline-content > p > img {
+          right: 0;
+          left: inherit;
+          transform-origin: bottom right;
+        }
+        .timeline > .timeline-item:nth-child(even) > .timeline-content > p > button {
+          left: 15px;
+          right: inherit;
+        }
+      
+    
 }
