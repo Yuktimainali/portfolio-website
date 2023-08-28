@@ -301,7 +301,9 @@ body.show-scrollbar {
     border-radius: 8px;
     border: 2px solid black;
 }
-
+.carousel-item img{
+    border-radius: 8.5px;
+}
 .nav-content h2 {
     margin-top: 12px;
     letter-spacing: 1.5;
