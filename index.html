@@ -20,7 +20,7 @@
         <div class="loader"></div>
     </div>
     <div class="website-content">
-        <div class="intro-body">
+        <div class="nav-body">
             <div class="nav">
                 <ul class='nav-bar'>
                     <h2>Yukti</h2>
@@ -29,7 +29,7 @@
                         <li><a href="#education-page">Education</a></li>
                         <li><a href="#skills-page">Skills</a></li>
                         <li><a href="#experience-page">Experience</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#contact-page">Contact</a></li>
                         <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
                     </span>
                     <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
@@ -226,6 +226,43 @@
 
             </div>
         </div>
+        <div id="contact-page">
+            <div class="contact-content">
+                <h1>Contact</h1>
+                <h2>Let's connect.</h2>            
+                <div class="contact-info">
+                    <div class="contact-info-1">
+                        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224347.086277298!2d76.89713423330886!3d28.52699609991174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1695622576853!5m2!1sen!2sin" 
+                            width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                        <!-- <h1>hello</h1> -->                    
+                    </div>
+                    <div class="contact-info-2">
+                        <form action="submit.php" method="post">
+                            <!-- <label for="full-name">Full Name:</label> -->
+                            <input placeholder="Enter your name" type="text" id="full-name" name="full-name" required>
+                
+                            <!-- <label for="email">Email ID:</label> -->
+                            <input placeholder="Enter your email" type="email" id="email" name="email" required>
+                            <label for="dropdown" style="text-align: left;">How did you get to know about me?</label>
+                            <div class="styled-radio">
+                                <input type="radio" id="linkedin" name="social-media" value="LinkedIn">
+                                <label for="linkedin">LinkedIn</label>
+                            
+                                <input type="radio" id="instagram" name="social-media" value="Instagram">
+                                <label for="instagram">Instagram</label>
+                            
+                                <input type="radio" id="other" name="social-media" value="Other">
+                                <label for="other">Other</label>
+                            </div>
+                            
+                            <input class="styled-button" type="submit" value="Submit">
+                            
+                        </form>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+       
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10.0.4/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
