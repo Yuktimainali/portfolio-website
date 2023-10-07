@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (response.ok) {
           return response.text();
         } else {
-          throw new Error("Form submission failed");
+          throw new Error("Server Down");
         }
       })
       .then((data) => {
@@ -106,7 +106,8 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .catch((error) => {
         console.error("Error:", error);
-        toastr.error("Error: Data insertion failed");
+        toastr.error("Error: Server Down");
+        contactForm.reset();
       });
   });
 });

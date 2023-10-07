@@ -734,19 +734,6 @@ body.show-scrollbar {
   border-radius: 10px;
 }
 
-/* toastr css */
-
-/* Customize the background color for success notifications */
-/* Customize the background color and text color for success notifications */
-.toast-success {
-  background-color: green;
-  color: black; /* Change the text color to black */
-}
-
-/* Customize the background color for error notifications */
-.toast-error {
-  background-color: rgb(173, 0, 0);
-}
 
 
 @media(max-width: 920px) {
