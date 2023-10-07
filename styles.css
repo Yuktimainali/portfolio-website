@@ -734,53 +734,19 @@ body.show-scrollbar {
   border-radius: 10px;
 }
 
+/* toastr css */
 
-
-
-
-
-/* .contact-info-2 {
-  width: 800px; 
-  padding: 10px; 
-  height: 500px;
-  margin: 40px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(103, 58, 183, 0.08);
+/* Customize the background color for success notifications */
+/* Customize the background color and text color for success notifications */
+.toast-success {
+  background-color: green;
+  color: black; /* Change the text color to black */
 }
 
-.contact-info-2 label {
-  margin-top: 20px;
-  padding:10px;
-  display: block;
-  margin-bottom: 5px;
+/* Customize the background color for error notifications */
+.toast-error {
+  background-color: rgb(173, 0, 0);
 }
-
-.contact-info-2 input[type="text"],
-.contact-info-2 input[type="email"] {
-  width: 90%;
-  padding: 5px;
-  margin-bottom: 15px;
-  margin: 10px;
-  border: #fff;
-  border-bottom: 1px solid black;
-  border-radius: 2px;
-} */
-
-/* .contact-info-2 input[type="submit"] {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.contact-info-2 input[type="submit"]:hover {
-  background-color: #0056b3;
-} */
-
 
 
 @media(max-width: 920px) {
