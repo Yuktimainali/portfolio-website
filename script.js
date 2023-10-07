@@ -59,12 +59,13 @@ $(document).ready(function () {
   }, 3500);
 });
 
+//toastr
+
 //toastr js
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Initialize Toastr
   toastr.options = {
-    positionClass: "toast-top-right", // Adjust the position as needed
+    positionClass: "toast-top-right",
     closeButton: true,
     progressBar: false,
   };
@@ -72,41 +73,41 @@ document.addEventListener("DOMContentLoaded", function () {
   const contactForm = document.getElementById("contact-form");
 
   contactForm.addEventListener("submit", function (e) {
-    e.preventDefault(); // Prevent the form from submitting
+    e.preventDefault();
 
-    // Get form data
     const fullName = document.getElementById("full-name").value;
     const email = document.getElementById("email").value;
     const subject = document.getElementById("text").value;
     const message = document.getElementById("textarea").value;
 
-    // Perform form submission using fetch
-    fetch("http://localhost:3000/submitform.php", {
+    const formData = `full-name=${encodeURIComponent(
+      fullName
+    )}&email=${encodeURIComponent(email)}&text=${encodeURIComponent(
+      subject
+    )}&textarea=${encodeURIComponent(message)}`;
+
+    fetch("http://localhost:3000/submit.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
       },
-      body: `full-name=${encodeURIComponent(
-        fullName
-      )}&email=${encodeURIComponent(email)}&text=${encodeURIComponent(
-        subject
-      )}&textarea=${encodeURIComponent(message)}`,
+      body: formData,
     })
       .then((response) => {
         if (response.ok) {
-          // Form submission was successful, display Toastr success message
-          toastr.success("Data inserted successfully");
-          contactForm.reset(); // Clear the form fields if needed
+          return response.text();
         } else {
-          // Form submission failed, display Toastr error message
-          toastr.error("Error: Data insertion failed");
-          contactForm.reset();
+          throw new Error("Form submission failed");
         }
+      })
+      .then((data) => {
+        toastr.success("Data inserted successfully");
+        contactForm.reset();
       })
       .catch((error) => {
         console.error("Error:", error);
         toastr.error("Error: Data insertion failed");
-        
       });
   });
 });
+

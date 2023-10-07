@@ -1,5 +1,16 @@
 <?php
-require_once('cors.php');
+// Allow requests from any origin for development purposes
+header("Access-Control-Allow-Origin: *");
+
+// Allow the following HTTP methods
+header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
+
+// Allow the following headers
+header("Access-Control-Allow-Headers: Content-Type");
+
+// Allow cookies to be included with the requests
+header("Access-Control-Allow-Credentials: true");
+
 $user = 'root';
 $pass = '';
 $dbName = 'portfolio-website-db';
@@ -35,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $inserted = true; // Data inserted successfully (this won't be reached)
         } else {
             http_response_code(400); // Set the status code to 400 Bad Request
-            echo "Error: Data insertion failed";
+            echo "Error: Server Down";
         }
         $stmt->close();
     }
@@ -50,7 +61,7 @@ echo "<script>
         if ($inserted) {
             toastr.success('Data inserted successfully');
         } else {
-            toastr.error('Error: Data insertion failed');
+            toastr.error('Error: Server Down');
         }
     });
 </script>";
