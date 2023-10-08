@@ -45,6 +45,27 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+function scrollToTarget(targetId) {
+  const target = document.querySelector(targetId);
+
+  if (target) {
+      const elementPosition = target.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY;
+
+      window.scroll({
+          top: offsetPosition,
+          behavior: "smooth",
+      });
+  }
+}
+
+// Add a click event listener to the "Let's connect" button
+const connectButton = document.querySelector(".styled-button");
+connectButton.addEventListener("click", function (event) {
+  event.preventDefault();
+  scrollToTarget(this.parentElement.getAttribute("href"));
+});
+
 $(document).ready(function () {
   const textElement = document.getElementById("text-animation");
   const initialText = textElement.textContent;
